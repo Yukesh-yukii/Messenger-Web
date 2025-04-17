@@ -4,7 +4,7 @@ from firebase_admin import credentials, auth, firestore
 from flask_cors import CORS
 
 # Initialize Firebase Admin SDK
-cred = credentials.Certificate("backend/firebase-admin-key.json")
+cred = credentials.Certificate("")
 firebase_admin.initialize_app(cred)
 
 app = Flask(__name__)
